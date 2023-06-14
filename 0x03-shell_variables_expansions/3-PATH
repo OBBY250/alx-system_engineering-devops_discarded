@@ -1,3 +1,10 @@
 #!/bin/bash
-echo ${#PATH//:/}
+#!/bin/bash
+
+count_dirs() {
+  local path=($(echo $PATH))
+  echo "${#path[@]}"
+}
+
+count_dirs
 
